@@ -12,7 +12,7 @@ AlignOperands: Align
 AlignTrailingComments: true
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: true
-AllowShortFunctionsOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: All          
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLoopsOnASingleLine: false
 BinPackArguments: false
@@ -48,7 +48,7 @@ PointerAlignment: Left
 ReflowComments:  true
 SortIncludes:    false
 SortUsingDeclarations: true
-SpaceAfterCStyleCast: true
+SpaceAfterCStyleCast: false                     
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: true
 SpaceBeforeAssignmentOperators: true
