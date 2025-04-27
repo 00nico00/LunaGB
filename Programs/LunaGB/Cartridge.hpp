@@ -6,6 +6,8 @@ using namespace Luna;
 //! The CartridgeHeader is mapped in range 0x0100 ~ 0x014F in ROM data.
 //! See https://gbdev.io/pandocs/The_Cartridge_Header.html
 
+struct Emulator;
+
 struct CartridgeHeader
 {
     u8 entry[4];
@@ -31,3 +33,6 @@ inline CartridgeHeader* get_cartridge_header(byte_t* rom_data)
 const c8* get_cartridge_type_name(u8 type);
 const c8* get_cartridge_ram_size_name(u8 ram_size_code);
 const c8* get_cartridge_lic_code_name(u8 lic_code);
+
+u8 cartridge_read(Emulator* emu, u16 addr);
+void cartridge_write(Emulator* emu, u16 addr, u8 data);
