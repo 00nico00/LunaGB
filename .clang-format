@@ -70,4 +70,3 @@ UseTab:          Never
 
 # 特殊规则
 IncludeBlocks: Preserve
-IndentPPDirectives: None

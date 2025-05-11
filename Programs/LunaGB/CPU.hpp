@@ -59,7 +59,7 @@ struct CPU
     //! return zero flag
     bool fz() const { return (f & 0x80) != 0; }
     //! return sub flag
-    bool fs() const { return (f & 0x40) != 0; }
+    bool fn() const { return (f & 0x40) != 0; }
     //! return half carry flag
     bool fh() const { return (f & 0x20) != 0; }
     //! return carry flag
